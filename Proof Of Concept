@@ -1,0 +1,33 @@
+Scenario 1: Gather accelerometer and compass data over time from microbits that begin at a designated point A (e.g., the atrium in the Harper Center) and take different routes to a designated point B (e.g., the atrium in the Hixson-Lied Science Building) at a specific time (e.g., 10:45am) of a typical class day
+
+Power in the field - After running a test on a microbit running similar software to the final product we wish to develop, we have determined that the network microbits should be sufficiently powered for over 24 hours using radio power 4 and similar functionality.
+
+Radio line-of-sight - The radio range on microbits with power setting of 4 seems to be around 100 to 150 feet without data loss and somewhat clear line of sight. The only likely problem we foresee is the possible large number of microbits required and ensuring they are in safe locations during the data recording.
+
+Radio dataflow constraints - Based on the type of data to be sent, there should be negligble constraints on the radio dataflow. Small integers can be sent very quickly as characters and using the built in addressing of the microbits, garbage data can be fairly easily filtered.
+
+It is likely that microbits will need to be set up along the preset paths in order to properly transmit the data during the walking. The accelerometer data and compass data should be fairly easy to transport to the final storage. Consideration will have to be made within our code to try to reduce duplicates of the same data.
+
+
+
+Scenario 2: Gather temperature differentials over time from microbits placed in two places on Creighton's campus (e.g., the Jesuit Gardens and the top level of the 24th Street Parking Garage) over a 24 hour period of time.
+
+Power in the field - After running a test on a microbit running similar software to the final product we wish to develop, we have determined that the network microbits should be sufficiently powered for over 24 hours using radio power 4 and similar functionality. As mentioned before, the running of the microbits for an expended period of time seems to be fairly viable. 
+
+Radio line-of-sight - The radio range on microbits with power setting of 4 seems to be around 100 to 150 feet without data loss and somewhat clear line of sight. The largest foreseeable problem is again finding suitable locations to place the microbits.
+
+Radio dataflow constraints - Based on the type of data to be sent, there should be negligble constraints on the radio dataflow. Small integers can be sent very quickly as characters and using the built in addressing of the microbits, garbage data can be fairly easily filtered.
+
+In this case, we will likely only need 2 chains of relay microbits to transmit data to the storage system. The temperature data will be easy to transmit and filter.
+
+
+
+Scenario 3: Gather sequential motion sensor data in two points at Creighton (e.g., both ends of the Pedestrian Bridge) to determine the average time that walkers take to cross between the two points.
+
+Power in the field - After running a test on a microbit running similar software to the final product we wish to develop, we have determined that the network microbits should be sufficiently powered for over 24 hours using radio power 4 and similar functionality. As mentioned before, the running of the microbits for an expended period of time seems to be fairly viable. 
+
+Radio line-of-sight - The radio range on microbits with power setting of 4 seems to be around 100 to 150 feet without data loss and somewhat clear line of sight. The largest foreseeable problem is again finding suitable locations to place the microbits.
+
+Radio dataflow constraints - Based on the type of data to be sent, there should be negligble constraints on the radio dataflow. Small integers can be sent very quickly as characters and using the built in addressing of the microbits, garbage data can be fairly easily filtered.
+
+In this case, there is likely only a need for one chain of relay microbits to transmit the data gathered to the storage system. 
